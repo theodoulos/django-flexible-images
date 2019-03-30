@@ -14,7 +14,7 @@ def flexible_image(image, *args, **kwargs):
     return get_template_context(image, *args, **kwargs)
 
 
-@register.assignment_tag
+@register.simple_tag
 def flexible_image_list(image):
     """Given an ImageField `image`, returns a list of images sizes in this
     form:
